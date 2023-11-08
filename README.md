@@ -1,6 +1,8 @@
 # Stupidly Concise Language
 
-Stupidly Concise Language (SCLang) is a **conceptual** programming language with extremely concise syntax, borrowing functional programming concepts.
+Stupidly Concise Language (SCLang) is a **conceptual** programming language
+with an extremely concise syntax, borrowing concepts from functional
+programming.
 
 SCLang is inspired mostly by Python and Rust, and to a lesser extent Haskell.
 
@@ -52,7 +54,8 @@ for num in (list, doubles, squares):
     > num
 ```
 
-This example and other examples are available in the repository this README is in.
+This example and other examples are available in the repository this README is
+in.
 
 ## File Attributes
 
@@ -64,12 +67,15 @@ I would have decided on `.sc` but it turns out that's already used.
 
 ## Contribute?
 
-Please. I want to make this real but I have no idea how to actually make a programming language.
+Please. I want to make this real but I have no idea how to actually make a
+programming language.
 
-If you're interested in making this concept a reality and have expertise in language development, your contributions are welcome.
+If you're interested in making this concept a reality and have expertise in
+language development, your contributions are welcome.
 
 ## License
 
 SCLang will be licensed under GNU LGPL v3.0 when it's actually implemented.
 
-Right now? [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/), since it's only conceptual.
+Right now? [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/),
+since it's only conceptual.

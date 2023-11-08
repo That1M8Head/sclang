@@ -1,5 +1,5 @@
 # Ticketing System
-# An example of hypothetical SCLang code
+# An example of hypothetical Soel code
 
 using sc::chrono::delay as delay
 

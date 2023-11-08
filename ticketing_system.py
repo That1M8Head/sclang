@@ -1,5 +1,5 @@
 # Ticketing System
-# An example of hypothetical SCLang code, but translated to Python
+# An example of hypothetical Soel code, but translated to Python
 
 from time import sleep as delay
 

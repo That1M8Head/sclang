@@ -1,8 +1,8 @@
 # `>` prints
-> "Hello, SCLang!"
+> "Hello, Soel!"
 
 # `print()` also prints
-print("Hello, SCLang!")
+print("Hello, Soel!")
 
 # immutable and mutable variables
 let a (u8) = 5

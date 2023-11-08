@@ -1,24 +1,32 @@
-# Stupidly Concise Language
+# Soel
 
-Stupidly Concise Language (SCLang) is a **conceptual** programming language
-with an extremely concise syntax, borrowing concepts from functional
+Soel is a **conceptual** programming language that's stupidly concise and is a
+programming language. (or, it will be)
+
+Soel features an extremely concise syntax, borrowing concepts from functional
 programming.
 
-SCLang is inspired mostly by Python and Rust, and to a lesser extent Haskell.
+Soel is inspired mostly by Python and Rust, and to a lesser extent Haskell.
+
+Soel is not a purely functional programming language, in fact, it has more in
+common with Rust than with Haskell, but it has full support for functional
+programming concepts.
+
+(Or, well, it *will*.)
 
 > ⚠️ **Expectation Warning**
 >
-> SCLang is **only a concept** and is not an actually implemented language.
+> Soel is **only a concept** and is not an actually implemented language.
 > Its implementation is a goal for the future.
 
 ## Example
 
-```sclang
+```soel
 # `>` prints
-> "Hello, SCLang!"
+> "Hello, Soel!"
 
 # `print()` also prints
-print("Hello, SCLang!")
+print("Hello, Soel!")
 
 # immutable and mutable variables
 let a (u8) = 5
@@ -57,13 +65,18 @@ for num in (list, doubles, squares):
 This example and other examples are available in the repository this README is
 in.
 
+## Where the name comes from
+
+It's a portmanteau of "something" and "else", because the language sure is
+something else.
+
+Also, you pronounce it `/sōl/`, like the word "soul".
+
 ## File Attributes
 
-SCLang's file extension will ideally be `.scl`.
+Soel's file extension will ideally be `.soel`.
 
-I would have decided on `.sc` but it turns out that's already used.
-
-`.sclang` is another option. Maybe even `.stupid`.
+There are other options, probably, but I can't think of any right now.
 
 ## Contribute?
 
@@ -75,7 +88,7 @@ language development, your contributions are welcome.
 
 ## License
 
-SCLang will be licensed under GNU LGPL v3.0 when it's actually implemented.
+Soel will be licensed under GNU LGPL v3.0 when it's actually implemented.
 
 Right now? [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/),
 since it's only conceptual.

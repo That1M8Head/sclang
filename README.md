@@ -19,51 +19,87 @@ programming concepts.
 > Soel is **only a concept** and is not an actually implemented language.
 > Its implementation is a goal for the future.
 
-## Example
+## Examples
+
+`>` is a macro that uses Soel's underlying `println()` function.
 
 ```soel
-# `>` prints
 > "Hello, Soel!"
+```
 
-# `print()` also prints
-print("Hello, Soel!")
+`println()` can be called directly, too.
 
-# immutable and mutable variables
+```soel
+println("Hello, Soel!")
+```
+
+Variables are immutable by default, like in Rust.
+
+```soel
 let a (u8) = 5
 let mut b (u8) = 4
 b += a;
 > b
+```
 
-# `_` is used for immediate variables that never get used and are immediately deallocated
+For loops are a lot more concise when you only need it to work in specific conditions (for example, only print if the current number, divided by 2, has a remainder, i.e. is odd)
+
+`_` is used for immediate variables that never get used, and are immediately
+deallocated.
+
+```soel
 x % 2 for _ in ..5:
     > "Wow, that's odd"
+```
 
-# function signatures with no params need no parentheses
+When defining a function, the function signature doesn't need brackets
+(parentheses) if it takes no parameters.
+
+```soel
 fn true:
     true # implicit returns
+```
 
-# inline variables in strings like Python 
+Variables inside strings work like Python's f-strings without the `f`.
+
+```soel
 > "{true()}"
+```
 
-# you can also do it the Rust way, which only works with `print()`, not `>`
-# semicolons are supported but optional
-print("{}", true());
+You can also do it similarly to Rust, although this doesn't work with the `>`
+macro.
 
-# vectors
+Semi-colons are supported, but they're optional like JavaScript.
+
+```soel
+println("{}", true());
+```
+
+Rust-like vectors are supported.
+
+```soel
 let list (vector<int>) = [ 1, 2, 3, 4 ]
+```
 
-# func. programming, closures
-# `x**` will double x, exponentiation is done with `^` instead
+Functional programming concepts, as discussed earlier, are supported,
+including the `map()` higher-order function and closures.
+
+`x**` will double x, exponentiation is done with `^` instead.
+
+```soel
 let doubles = list.map(|num| num**)
 let squares = list.map(|num| num^2)
+```
 
-# if param `in` is tuple, for loop goes through each
+For loops support iterating through each element in a list or tuple.
+
+```soel
 for num in (list, doubles, squares):
     > num
 ```
 
-This example and other examples are available in the repository this README is
-in.
+The full source file and other examples are available in the repository this
+README is in.
 
 ## Where the name comes from
 

@@ -1,0 +1,38 @@
+# `>` prints
+> "Hello, SCLang!"
+
+# `print()` also prints
+print("Hello, SCLang!")
+
+# immutable and mutable variables
+let a (u8) = 5
+let mut b (u8) = 4
+b += a;
+> b
+
+# `_` is used for immediate variables that never get used and are immediately deallocated
+x % 2 for _ in ..5:
+    > "Wow, that's odd"
+
+# function signatures with no params need no parentheses
+fn true:
+    true # implicit returns
+
+# inline variables in strings like Python 
+> "{true()}"
+
+# you can also do it the Rust way, which only works with `print()`, not `>`
+# semicolons are supported but optional
+print("{}", true());
+
+# vectors
+let list (vector<int>) = [ 1, 2, 3, 4 ]
+
+# func. programming, closures
+# `x**` will double x, exponentiation is done with `^` instead
+let doubles = list.map(|num| num**)
+let squares = list.map(|num| num^2)
+
+# if param `in` is tuple, for loop goes through each
+for num in (list, doubles, squares):
+    > num

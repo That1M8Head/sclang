@@ -1,0 +1,35 @@
+# Ticketing System
+# An example of hypothetical SCLang code
+
+using sc::chrono::delay as delay
+
+fn welcome_message:
+    > "Welcome to the Ticketing System!"
+
+fn check_ticket(ticket_id: i32, ticket_owner: str):
+    > "Ticket #{ticket_id} owned by {ticket_owner}"
+    > "Please wait while we verify this ticket exists."
+    delay(5000)
+    > "Thank you!"
+    true
+
+fn print_ticket(ticket_id: i32, ticket_owner: str):
+    if !check_ticket(ticket_id, ticket_owner):
+        > "Sorry, this ticket is invalid."
+        return
+    let ticket_display (vector<str>) =
+    [  
+        "Ticket #{ticket_id} owned by {ticket_owner}",
+        "-------------------------------------------",
+        "Adult Ticket                         £10.00",
+        "                                           ",
+        "-------------------------------------------",
+        "Authorised                                 ",
+    ];
+    print("{}", ticket_display.join('\n'))
+
+fn main:
+    welcome_message()
+    print_ticket(123, "John Doe")
+
+# again, conceptual!
